@@ -1,6 +1,12 @@
+@font-face{
+    font-family: Quantico;
+    src: url("/sources/Quantico-Bold.ttf");
+}
+
 $primary-color: #222222;
-$secondary-color: #ED1C24;
-$font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$secondary-color: #ED1C24; 
+$primary-font-family: "Quantico"; 
+$secondary-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $font-size: 16px;
 
 *{
@@ -9,15 +15,20 @@ $font-size: 16px;
 
 body, html{
     margin: 0px;
-    font-family: $font-family;
+    font-family: $secondary-font-family;
     font-size: $font-size;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     display: flex;
-    padding: 0px 8px;
+    padding: 0px 100px;
+}
+
+p{
+    margin: 0;
 }
 
 @import 'mainheader';
+@import 'mainbanner';

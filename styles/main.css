@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Quantico;
+  src: url("/sources/Quantico-Bold.ttf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,12 +15,16 @@ body, html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 8px;
+  padding: 0px 100px;
+}
+
+p {
+  margin: 0;
 }
 
 .mainheader {
@@ -37,6 +46,34 @@ body, html {
 }
 
 .mainheader__nav {
-  margin-left: 200px;
+  margin: 0 0 0 auto;
+}
+
+.mainbanner {
+  /*  max-width: 1366px; */
+  font-family: "Quantico";
+  color: white;
+  position: relative;
+}
+
+.mainbanner__banner {
+  width: 100%;
+}
+
+.mainbanner__text {
+  max-width: 600px;
+  position: absolute;
+  display: block;
+  font-size: 60px;
+  top: 65%;
+  margin: 0 auto 0 0;
+}
+
+.mainbanner--red {
+  color: #ED1C24;
+}
+
+.mainbanner--text2 {
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */
