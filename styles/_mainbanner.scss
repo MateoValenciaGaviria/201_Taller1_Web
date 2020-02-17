@@ -3,10 +3,10 @@
 
    font-family: $primary-font-family;
    color: white;
-   position: relative;
 
    &__banner{
        width: 100%;
+       position: relative;
    }
 
    &__text{
@@ -14,8 +14,8 @@
        position: absolute;
        display: block;
        font-size: 60px;
-       top: 65%;
-       margin: 0 auto 0 0;
+       top: 550px;
+      /*  margin: 0 auto 0 0; */
    }
 
    &--red{

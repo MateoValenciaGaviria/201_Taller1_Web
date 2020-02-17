@@ -1,0 +1,59 @@
+.mainfooter{
+/*     margin-top: -5px;
+ */    background-color: $primary-color;
+    padding: 40px 0px;
+
+    &__section{
+        display: inline-flex;
+    }
+
+    &__container{
+        flex-direction: column;
+    }
+
+    &__link{
+        color: #8D8D8D;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 3px 0;
+
+        &--title{
+            color: white;
+            padding: 0 0 30px 0;
+        }
+
+        &--footer{
+            color: white;
+            margin: 0 20px;
+            font-size: 14px;
+        }
+
+        &--copyright{
+            font-size: 12px;
+        }
+    }
+
+    &__line{
+        color: white;
+        width: 100%;
+        margin: 40px 0 10px;
+    }
+
+    &__information{
+        text-align: center;
+        display: block;
+        max-width: 600px;
+        margin: 30px auto 0;
+    }
+
+    &__terms{
+        margin: 20px auto;
+    }
+    
+    
+    &__copyright{
+        margin: 10px auto;
+    }
+
+    
+}
