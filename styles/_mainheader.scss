@@ -15,6 +15,14 @@
 
     &__nav{
         margin: 0 0 0 auto;
+
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
+    }
+
+    &__hamburguerbtn{
+        
     }
 }
 

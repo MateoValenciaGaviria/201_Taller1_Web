@@ -49,6 +49,12 @@ p {
   margin: 0 0 0 auto;
 }
 
+@media (max-width: 400px) {
+  .mainheader__nav {
+    display: none;
+  }
+}
+
 .mainbanner {
   /*  max-width: 1366px; */
   font-family: "Quantico";
