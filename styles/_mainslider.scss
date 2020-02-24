@@ -1,0 +1,16 @@
+.mainslider{
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__imagecontainer{
+        max-width: 25%;
+    }
+
+    &__image{
+        width: 100%;
+    }
+
+}
