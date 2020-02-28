@@ -17,7 +17,7 @@ $font-size: 13px;
 body, html{
     margin: 0px;
     font-family: $secondary-font-family;
-//    font-size: $font-size;
+//  font-size: $font-size;
 }
 
 .container{
@@ -34,5 +34,6 @@ p{
 @import 'mainheader';
 @import 'mainbanner';
 @import 'mainvideo';
+@import 'mainfeatures';
 @import 'mainfooter';
 @import 'mainslider';

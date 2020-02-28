@@ -6,10 +6,13 @@
 
     &__section{
         width: 100%;
-        display: inline-flex;
+        display: flex;
+        margin: 0 7px;
     }
 
     &__container{
+        display: flex;
+        margin: 0 auto;
         max-width: 25%;
         flex-direction: column;
     }
@@ -18,7 +21,7 @@
         color: #8D8D8D;
         text-decoration: none;
         font-size: 1.2em;
-        padding: 3px 0;
+        padding: 3px 3px;
 
         &--title{
             color: white;

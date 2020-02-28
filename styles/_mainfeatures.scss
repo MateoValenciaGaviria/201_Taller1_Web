@@ -1,0 +1,34 @@
+.mainfeatures{
+    background-color: #000000;
+    font-family: $primary-font-family;
+    font-size: 36px;
+    color: white;
+    padding: 40px 0px;
+
+    &__title{
+        align-items: center;
+    }
+
+    &__titletext{
+        position: absolute;
+        left: 400px;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__navtitles{
+        max-width: 33.3%;
+        margin: 50px auto 5px;
+        border-style: solid;
+        border-color: $secondary-color;
+        border-width: 3px;
+    }
+
+    &__navtitles:nth-child(2n) {
+        border-width: 3px 0;
+    }
+
+}
