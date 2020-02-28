@@ -20,11 +20,12 @@
     }
 
     &__navtitles{
-        max-width: 33.3%;
+        width: 34%;
         margin: 50px auto 5px;
         border-style: solid;
         border-color: $secondary-color;
         border-width: 3px;
+        text-align: center;
     }
 
     &__navtitles:nth-child(2n) {

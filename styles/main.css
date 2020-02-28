@@ -1,6 +1,6 @@
 @font-face {
   font-family: Quantico;
-  src: url("/sources/Quantico-Bold.ttf");
+  src: url("../sources/Quantico-Bold.ttf");
 }
 
 * {
@@ -127,11 +127,12 @@ p {
 }
 
 .mainfeatures__navtitles {
-  max-width: 33.3%;
+  width: 34%;
   margin: 50px auto 5px;
   border-style: solid;
   border-color: #ED1C24;
   border-width: 3px;
+  text-align: center;
 }
 
 .mainfeatures__navtitles:nth-child(2n) {
