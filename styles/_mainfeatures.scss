@@ -26,25 +26,40 @@
         border-color: $secondary-color;
         border-width: 3px;
         text-align: center;
+
+        &--selected{
+            background: $secondary-color;
+        }
     }
 
     &__navtitles:nth-child(2n) {
         border-width: 3px 0;
     }
 
-    &__text{
-        display: flex;
-        justify-content: center;
+    &__image{
+
+    }
+
+    &__content{
         margin: auto;
     }
 
+    &__info{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        &--hidden{
+            display: none;
+        }
+    }
+
     &__infotext{
-        margin: 25% 0;
-        font-size: 36px;
+        font-size: 34px;
 
         &--green{
             color: #76B900;
         }
+
     }
 
 }

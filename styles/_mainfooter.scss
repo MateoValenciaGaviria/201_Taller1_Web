@@ -7,7 +7,8 @@
     &__section{
         width: 100%;
         display: flex;
-        margin: 0 7px;
+        justify-content: space-around;
+        
     }
 
     &__container{
@@ -16,6 +17,10 @@
         max-width: 25%;
         flex-direction: column;
     }
+
+    /* &__container:nth-child(1){
+        margin: 0 100px;
+    } */
 
     &__link{
         color: #8D8D8D;
