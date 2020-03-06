@@ -145,11 +145,20 @@ p {
 }
 
 .mainfeatures__image {
-  height: auto;
+  width: auto;
+}
+
+.mainfeatures__pcreference {
+  width: 100%;
 }
 
 .mainfeatures__content {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .mainfeatures__info {
@@ -159,7 +168,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
 .mainfeatures__info--hidden {
@@ -172,6 +180,123 @@ p {
 
 .mainfeatures__infotext--green {
   color: #76B900;
+}
+
+.mainslider {
+  font-size: 0;
+}
+
+.mainslider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainslider__imagecontainer {
+  max-width: 25%;
+}
+
+.mainslider__image {
+  width: 100%;
+}
+
+.mainkeyboard {
+  background: #000000;
+  height: 975px;
+}
+
+.mainkeyboard__color {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: white;
+  height: 100%;
+}
+
+.mainkeyboard__layout {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.mainkeyboard__text {
+  font-family: "Quantico";
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 190px;
+  text-align: center;
+}
+
+.mainsubscribe {
+  font-family: "Quantico";
+  background-color: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.mainsubscribe__title {
+  margin: 10px 0 10px;
+  font-size: 50px;
+}
+
+.mainsubscribe__container {
+  height: 40px;
+  margin: 10px 0 40px;
+}
+
+.mainsubscribe__input {
+  font-family: "Quantico";
+  height: 100%;
+  width: 100%;
+  max-width: 690px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.mainsubscribe__button {
+  font-family: "Quantico";
+  color: white;
+  background-color: #ED1C24;
+  height: 100%;
+  width: 100%;
+  max-width: 246px;
+  margin: 0 40px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 15px;
+}
+
+.mainsubscribe__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
 }
 
 .mainfooter {
@@ -246,82 +371,5 @@ p {
 
 .mainfooter__copyright {
   margin: 10px auto;
-}
-
-.mainslider {
-  font-size: 0;
-}
-
-.mainslider__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.mainslider__imagecontainer {
-  max-width: 25%;
-}
-
-.mainslider__image {
-  width: 100%;
-}
-
-.mainsubscribe {
-  font-family: "Quantico";
-  background-color: #000000;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.mainsubscribe__title {
-  margin: 10px 0 10px;
-  font-size: 50px;
-}
-
-.mainsubscribe__container {
-  height: 40px;
-  margin: 10px 0 40px;
-}
-
-.mainsubscribe__input {
-  font-family: "Quantico";
-  height: 100%;
-  width: 100%;
-  max-width: 690px;
-  border-radius: 5px;
-  border-style: none;
-  padding: 15px;
-  font-size: 20px;
-}
-
-.mainsubscribe__button {
-  font-family: "Quantico";
-  color: white;
-  background-color: #ED1C24;
-  height: 100%;
-  width: 100%;
-  max-width: 246px;
-  margin: 0 40px;
-  border-radius: 5px;
-  border-style: none;
-  font-size: 15px;
-}
-
-.mainsubscribe__image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 200px;
 }
 /*# sourceMappingURL=main.css.map */
