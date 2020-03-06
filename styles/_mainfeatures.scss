@@ -3,7 +3,7 @@
     font-family: $primary-font-family;
     font-size: 36px;
     color: white;
-    padding: 40px 0px;
+    padding: 40px 0 0;
 
     &__title{
         align-items: center;
@@ -37,7 +37,7 @@
     }
 
     &__image{
-
+        height: auto;
     }
 
     &__content{

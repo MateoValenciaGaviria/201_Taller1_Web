@@ -24,6 +24,7 @@ body, html {
 
 p {
   margin: 0;
+  padding: 0;
 }
 
 .mainheader {
@@ -104,7 +105,7 @@ p {
   font-family: "Quantico";
   font-size: 36px;
   color: white;
-  padding: 40px 0px;
+  padding: 40px 0 0;
 }
 
 .mainfeatures__title {
@@ -141,6 +142,10 @@ p {
 
 .mainfeatures__navtitles:nth-child(2n) {
   border-width: 3px 0;
+}
+
+.mainfeatures__image {
+  height: auto;
 }
 
 .mainfeatures__content {
@@ -263,5 +268,60 @@ p {
 
 .mainslider__image {
   width: 100%;
+}
+
+.mainsubscribe {
+  font-family: "Quantico";
+  background-color: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.mainsubscribe__title {
+  margin: 10px 0 10px;
+  font-size: 50px;
+}
+
+.mainsubscribe__container {
+  height: 40px;
+  margin: 10px 0 40px;
+}
+
+.mainsubscribe__input {
+  font-family: "Quantico";
+  height: 100%;
+  width: 100%;
+  max-width: 690px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.mainsubscribe__button {
+  font-family: "Quantico";
+  color: white;
+  background-color: #ED1C24;
+  height: 100%;
+  width: 100%;
+  max-width: 246px;
+  margin: 0 40px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 15px;
+}
+
+.mainsubscribe__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
 }
 /*# sourceMappingURL=main.css.map */

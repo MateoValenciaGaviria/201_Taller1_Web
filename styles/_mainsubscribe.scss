@@ -1,0 +1,50 @@
+.mainsubscribe{
+    font-family: $primary-font-family;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__title{
+        margin: 10px 0 10px;
+        font-size: 50px;
+    }
+
+    &__container{
+        height: 40px;
+        margin: 10px 0 40px;
+    }
+
+    &__input{
+        font-family: $primary-font-family;
+        height: 100%;
+        width: 100%;
+        max-width: 690px;
+        border-radius: 5px;
+        border-style: none;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    &__button{
+        font-family: $primary-font-family;
+        color: white;
+        background-color: $secondary-color;
+        height: 100%;
+        width: 100%;
+        max-width: 246px;
+        margin: 0 40px;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 15px;
+      //  font-size: 30px;
+    }
+
+    &__image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 200px;
+    }
+}
