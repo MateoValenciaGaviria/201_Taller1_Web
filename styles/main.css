@@ -206,11 +206,7 @@ p {
 
 .mainkeyboard {
   background: #000000;
-  height: 975px;
-}
-
-.mainkeyboard__color {
-  margin: 0 auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,18 +217,29 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  background: white;
-  height: 100%;
+  z-index: -1;
+}
+
+.mainkeyboard__color {
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/colors.gif");
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -125px 0 0 -125px;
+  pointer-events: none;
 }
 
 .mainkeyboard__layout {
-  position: absolute;
-  top: 0;
-  height: 100%;
+  z-index: 1;
+  width: 100%;
 }
 
 .mainkeyboard__text {
+  z-index: 1;
   font-family: "Quantico";
   font-size: 20px;
   display: -webkit-box;
@@ -240,8 +247,9 @@ p {
   display: flex;
   color: white;
   position: absolute;
-  top: 190px;
+  top: 170px;
   text-align: center;
+  pointer-events: none;
 }
 
 .mainsubscribe {
@@ -296,7 +304,7 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 200px;
+  width: 20%;
 }
 
 .mainfooter {
