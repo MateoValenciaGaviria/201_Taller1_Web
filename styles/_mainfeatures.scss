@@ -20,6 +20,7 @@
     }
 
     &__navtitles{
+        font-family: $tertiary-font-family;
         width: 34%;
         margin: 50px auto 5px;
         border-style: solid;
@@ -59,6 +60,7 @@
     }
 
     &__infotext{
+        font-family: $tertiary-font-family;
         font-size: 34px;
 
         &--green{

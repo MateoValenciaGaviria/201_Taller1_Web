@@ -1,6 +1,11 @@
 @font-face {
-  font-family: Quantico;
+  font-family: Quantico-bold;
   src: url("../sources/Quantico-Bold.ttf");
+}
+
+@font-face {
+  font-family: Quantico-regular;
+  src: url("../sources/Quantico-Regular.ttf");
 }
 
 * {
@@ -57,7 +62,7 @@ p {
 
 .mainbanner {
   /*  max-width: 1366px; */
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   color: white;
   position: relative;
   font-size: 0;
@@ -102,7 +107,7 @@ p {
 
 .mainfeatures {
   background-color: #000000;
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   font-size: 36px;
   color: white;
   padding: 40px 0 0;
@@ -128,6 +133,7 @@ p {
 }
 
 .mainfeatures__navtitles {
+  font-family: "Quantico-regular";
   width: 34%;
   margin: 50px auto 5px;
   border-style: solid;
@@ -175,6 +181,7 @@ p {
 }
 
 .mainfeatures__infotext {
+  font-family: "Quantico-regular";
   font-size: 34px;
 }
 
@@ -240,7 +247,7 @@ p {
 
 .mainkeyboard__text {
   z-index: 1;
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,9 +259,87 @@ p {
   pointer-events: none;
 }
 
+.mainspecs {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#0A0A0A));
+  background: linear-gradient(180deg, #222222 0%, #0A0A0A 100%);
+  font-family: "Quantico-bold";
+  color: white;
+}
+
+.mainspecs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainspecs__imgcontainer {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.mainspecs__img {
+  width: 100%;
+}
+
+.mainspecs__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px 0 130px;
+}
+
+.mainspecs__title {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.mainspecs__title--red {
+  color: #ED1C24;
+}
+
+.mainspecs__table {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 10px 100px #000000;
+          box-shadow: 0px 10px 100px #000000;
+}
+
+.mainspecs__row {
+  padding: 7px 10px;
+  background: #2E2D2D;
+}
+
+.mainspecs__row--2 {
+  background: #454545;
+}
+
 .mainpublicity {
   font-size: 0;
-  font-family: "Quantico";
+  font-family: "Quantico-regular";
   position: relative;
 }
 
@@ -292,7 +377,7 @@ p {
 }
 
 .mainsubscribe {
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   background: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#0A0A0A));
   background: linear-gradient(180deg, #222222 0%, #0A0A0A 100%);
   color: white;
@@ -317,7 +402,7 @@ p {
 }
 
 .mainsubscribe__input {
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   height: 100%;
   width: 48%;
   max-width: 690px;
@@ -328,7 +413,7 @@ p {
 }
 
 .mainsubscribe__button {
-  font-family: "Quantico";
+  font-family: "Quantico-bold";
   color: white;
   background-color: #ED1C24;
   height: 100%;
@@ -352,9 +437,6 @@ p {
  */
   background-color: #222222;
   padding: 40px 0px;
-  /* &__container:nth-child(1){
-        margin: 0 100px;
-    } */
 }
 
 .mainfooter__section {
