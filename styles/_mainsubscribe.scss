@@ -1,14 +1,14 @@
 .mainsubscribe{
     font-family: $primary-font-family;
-    background-color: #000000;
+    background: linear-gradient(180deg, #222222 0%, #0A0A0A 100%);
     color: white;
     display: flex;
     flex-direction: column;
     position: relative;
 
     &__title{
-        margin: 10px 0 10px;
-        font-size: 50px;
+        margin: 20px 0 10px;
+        font-size: 40px;
     }
 
     &__container{
@@ -19,7 +19,7 @@
     &__input{
         font-family: $primary-font-family;
         height: 100%;
-        width: 100%;
+        width: 48%;
         max-width: 690px;
         border-radius: 5px;
         border-style: none;

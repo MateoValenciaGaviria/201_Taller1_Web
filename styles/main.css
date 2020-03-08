@@ -252,9 +252,49 @@ p {
   pointer-events: none;
 }
 
+.mainpublicity {
+  font-size: 0;
+  font-family: "Quantico";
+  position: relative;
+}
+
+.mainpublicity__logo {
+  position: absolute;
+  top: 10%;
+}
+
+.mainpublicity__img {
+  width: 100%;
+}
+
+.mainpublicity__paragraph {
+  position: absolute;
+  color: white;
+  bottom: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainpublicity__text {
+  font-size: 40px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.mainpublicity__text--red:hover {
+  cursor: pointer;
+  color: #ED1C24;
+}
+
 .mainsubscribe {
   font-family: "Quantico";
-  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#0A0A0A));
+  background: linear-gradient(180deg, #222222 0%, #0A0A0A 100%);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,8 +307,8 @@ p {
 }
 
 .mainsubscribe__title {
-  margin: 10px 0 10px;
-  font-size: 50px;
+  margin: 20px 0 10px;
+  font-size: 40px;
 }
 
 .mainsubscribe__container {
@@ -279,7 +319,7 @@ p {
 .mainsubscribe__input {
   font-family: "Quantico";
   height: 100%;
-  width: 100%;
+  width: 48%;
   max-width: 690px;
   border-radius: 5px;
   border-style: none;
