@@ -12,8 +12,10 @@
     }
 
     &__container{
-        height: 40px;
         margin: 10px 0 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     &__input{
@@ -23,7 +25,7 @@
         max-width: 690px;
         border-radius: 5px;
         border-style: none;
-        padding: 15px;
+        padding: 10px;
         font-size: 20px;
     }
 
@@ -37,6 +39,7 @@
         margin: 0 40px;
         border-radius: 5px;
         border-style: none;
+        padding: 14px;
         font-size: 15px;
     }
 
@@ -45,5 +48,36 @@
         bottom: 0;
         right: 0;
         width: 20%;
+    }
+
+    @media (max-width: $breakpoint-sm){
+        &__title{
+            margin: 20px 0 20px;
+            font-size: 25px;
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 0 20px;
+        }
+
+        &__input{
+            width: 100%;
+        }
+    
+        &__button{
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        &__image{
+            display: none;
+            height: 50%;
+        }
+       
     }
 }

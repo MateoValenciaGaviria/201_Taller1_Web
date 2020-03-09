@@ -41,7 +41,7 @@ var followMouse = function followMouse(){
    mouseTrackingColor.style.top = y + 'px'; 
 };
 
-/* window.onload = function() {
+window.onload = function() {
     followMouse();
-}; */
+};
 

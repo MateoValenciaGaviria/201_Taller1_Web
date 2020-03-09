@@ -31,7 +31,7 @@
         display: flex;
         color: white;
         position: absolute;
-        top: 170px;
+        top: 18%;
         text-align: center;
         pointer-events: none;
     }
@@ -43,7 +43,6 @@
             color: white;
             position: absolute;
             font-size: 60%;
-            top: 18%;
         }
 
         &__color{
@@ -51,9 +50,18 @@
             z-index: -1;
             width: 100%;
             background-image: url("../images/colors.gif");
+            background-size: cover;
             border-radius: 0;
             left: 10%;
             top: 50%;
+        }
+        
+    }
+
+    @media (max-width: $breakpoint-sm){
+
+        &__color{
+            left: 20%;
         }
         
     }

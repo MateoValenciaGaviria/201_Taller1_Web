@@ -15,7 +15,7 @@
        position: absolute;
        display: block;
        font-size: 60px;
-       bottom: 10%;
+       bottom: 5%;
    }
 
    &--red{
@@ -38,4 +38,17 @@
         }
 
    }
+
+   @media (max-width: 400px){
+
+    &__text{
+        font-size: 20px;
+        bottom: 10%;
+    }
+
+    &--text2{
+        display: none; 
+    }
+
+}
 }

@@ -11,7 +11,8 @@
 
     &__titletext{
         position: absolute;
-        left: 400px;
+        left: 30%;
+        font-size: 90%;
     }
 
     &__nav{
@@ -69,6 +70,10 @@
 
     }
 
+    &__nvidialogo{
+        width: 25%;
+    }
+
     @media (max-width: $breakpoint-sm){
         &__title{
             position: relative;
@@ -107,10 +112,6 @@
             border-width: 3px 3px;
         }
 
-        &__nvidialogo{
-            width: 50%;
-        }
-
         &__content{
             margin: auto;
             display: flex;
@@ -130,6 +131,13 @@
             text-align: center;
         }
         
+    }
+
+    @media (max-width: $breakpoint-sm){
+        &__infotext{
+            font-size: 15px;
+        }
+
     }
 
 }
