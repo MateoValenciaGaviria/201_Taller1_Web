@@ -1,20 +1,20 @@
-/* var mainheader__nav = document.querySelector('.mainheader__nav');
-var hambtn = document.querySelector('.hamburguerbtn');
-
-console.log('algo');
+//Menú hamburguesa
+var mainheader__navmobile = document.querySelector('.mainheader__navmobile');
+var hambtn = document.querySelector('.mainheader__hamburguerbtn');
+hambtn.addEventListener('click', handleHamClick);
 
 function handleHamClick(){
-    if(mainheader__nav.classList.contains('mainheader__nav--mobile')){
-        mainheader__nav.classList.remove('mainheader__nav--mobile');
-    }else {
-        mainheader__nav.classList.add('mainheader__nav--mobile');
-    }
-
-    mainheader__nav.classList.toggle('mainheader__nav--mobile');
+    mainheader__navmobile.classList.toggle('mainheader__navmobile--active');
 }
 
-hambtn.addEventListener('click', handleHamClick); */
+function handleWindowResize (event) {
+    if(window.innerWidth > 1000){
+        mainheader__navmobile.classList.remove('mainheader__navmobile--active');
+    }
+}
+window.addEventListener('resize', handleWindowResize);
 
+//Interacción teclado
 var mouseTrackingColor = document.querySelector('.mainkeyboard__color');
 var hoverLayoutMouse = document.addEventListener.bind(document);
 
@@ -41,7 +41,7 @@ var followMouse = function followMouse(){
    mouseTrackingColor.style.top = y + 'px'; 
 };
 
-window.onload = function() {
+/* window.onload = function() {
     followMouse();
-};
+}; */
 

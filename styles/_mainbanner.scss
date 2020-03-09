@@ -16,7 +16,6 @@
        display: block;
        font-size: 60px;
        bottom: 10%;
-      /*  margin: 0 auto 0 0; */
    }
 
    &--red{
@@ -25,5 +24,18 @@
 
    &--text2{
        font-size: 30px;
+   }
+
+   @media (max-width: $breakpoint-sm){
+
+        &__text{
+            font-size: 30px;
+            bottom: 10%;
+        }
+
+        &--text2{
+            display: none; 
+        }
+
    }
 }

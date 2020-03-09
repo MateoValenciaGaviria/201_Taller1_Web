@@ -15,4 +15,16 @@
         width: 100%;
     }
 
+    @media (max-width: $breakpoint-sm){
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__imagecontainer{
+            max-width: 50%;
+        }
+        
+    }
+
 }
