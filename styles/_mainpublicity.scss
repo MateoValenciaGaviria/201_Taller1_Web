@@ -32,4 +32,34 @@
         }
     }
 
+    @media (max-width: $breakpoint-sm){
+
+        &__logo{
+            width: 30%;
+        }
+
+        &__paragraph{
+            bottom: 10%;
+        }
+
+        &__text{
+            font-size: 22px;
+
+            &--red{
+                color: $secondary-color;
+            }
+        } 
+    }
+
+    @media (max-width: 400px){
+
+        &__logo{
+            width: 50%;
+        }
+
+        &__paragraph{
+            display: none;
+        } 
+    }
+
 }

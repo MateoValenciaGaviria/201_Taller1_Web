@@ -345,6 +345,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
     color: white;
     font-size: 28px;
     left: 0;
@@ -490,7 +491,8 @@ button {
     display: flex;
     color: white;
     position: absolute;
-    top: 80px;
+    font-size: 60%;
+    top: 18%;
   }
   .mainkeyboard__color {
     position: absolute;
@@ -581,6 +583,54 @@ button {
   background: #454545;
 }
 
+@media (max-width: 1000px) {
+  .mainspecs__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainspecs__imgcontainer {
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+  }
+  .mainspecs__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 100px;
+  }
+  .mainspecs__table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .mainpublicity {
   font-size: 0;
   font-family: "Quantico-regular";
@@ -618,6 +668,30 @@ button {
 .mainpublicity__text--red:hover {
   cursor: pointer;
   color: #ED1C24;
+}
+
+@media (max-width: 1000px) {
+  .mainpublicity__logo {
+    width: 30%;
+  }
+  .mainpublicity__paragraph {
+    bottom: 10%;
+  }
+  .mainpublicity__text {
+    font-size: 22px;
+  }
+  .mainpublicity__text--red {
+    color: #ED1C24;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainpublicity__logo {
+    width: 50%;
+  }
+  .mainpublicity__paragraph {
+    display: none;
+  }
 }
 
 .mainsubscribe {
