@@ -293,6 +293,10 @@ button {
   background: #ED1C24;
 }
 
+.mainfeatures__navtitles:hover {
+  cursor: pointer;
+}
+
 .mainfeatures__navtitles:nth-child(2n) {
   border-width: 3px 0;
 }
@@ -503,6 +507,9 @@ button {
 }
 
 @media (max-width: 1000px) {
+  .mainkeyboard__layout {
+    background-color: white;
+  }
   .mainkeyboard__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,20 +519,7 @@ button {
     font-size: 60%;
   }
   .mainkeyboard__color {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    background-image: url("../images/colors.gif");
-    background-size: cover;
-    border-radius: 0;
-    left: 10%;
-    top: 50%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .mainkeyboard__color {
-    left: 20%;
+    display: none;
   }
 }
 

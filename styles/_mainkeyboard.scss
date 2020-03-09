@@ -38,6 +38,10 @@
 
     @media (max-width: $breakpoint-sm){
 
+        &__layout{
+            background-color: white;
+        }
+
         &__text{
             display: flex;
             color: white;
@@ -46,22 +50,7 @@
         }
 
         &__color{
-            position: absolute;
-            z-index: -1;
-            width: 100%;
-            background-image: url("../images/colors.gif");
-            background-size: cover;
-            border-radius: 0;
-            left: 10%;
-            top: 50%;
-        }
-        
-    }
-
-    @media (max-width: $breakpoint-sm){
-
-        &__color{
-            left: 20%;
+            display: none;
         }
         
     }

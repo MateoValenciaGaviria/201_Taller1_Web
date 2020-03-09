@@ -1,4 +1,4 @@
-//Menú hamburguesa
+//Menu interaction
 var mainheader__navmobile = document.querySelector('.mainheader__navmobile');
 var hambtn = document.querySelector('.mainheader__hamburguerbtn');
 hambtn.addEventListener('click', handleHamClick);
@@ -14,7 +14,15 @@ function handleWindowResize (event) {
 }
 window.addEventListener('resize', handleWindowResize);
 
-//Interacción teclado
+//Features interaction
+var mainfeatures__navtitles = document.querySelector('.mainfeatures__navtitles');
+mainfeatures__navtitles.addEventListener('click', handleFeaturesClick);
+
+function handleFeaturesClick(){
+    mainfeatures__navtitles.classList.toggle('mainfeatures__navtitles--selected');
+}
+
+//Keyboard interaction
 var mouseTrackingColor = document.querySelector('.mainkeyboard__color');
 var hoverLayoutMouse = document.addEventListener.bind(document);
 
@@ -44,4 +52,6 @@ var followMouse = function followMouse(){
 window.onload = function() {
     followMouse();
 };
+
+
 
