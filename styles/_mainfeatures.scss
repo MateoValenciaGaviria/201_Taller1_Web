@@ -69,4 +69,66 @@
 
     }
 
+    @media (max-width: $breakpoint-sm){
+        &__title{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__titletext{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 28px;
+            left: 0;
+            margin: 20px;
+        }
+
+        &__nav{
+            position: relative;
+            flex-direction: column;
+        }
+
+        &__navtitles{
+            font-size: 28px;
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto 5px;
+            border-style: solid;
+            border-color: $secondary-color;
+            border-width: 3px;
+            text-align: center;
+        }
+
+        &__navtitles:nth-child(2n) {
+            border-width: 3px 3px;
+        }
+
+        &__nvidialogo{
+            width: 50%;
+        }
+
+        &__content{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__info{
+            display: flex;
+            justify-content: center;
+            &--hidden{
+                display: none;
+            }
+        }
+
+        &__infotext{
+            font-size: 28px;
+            text-align: center;
+        }
+        
+    }
+
 }

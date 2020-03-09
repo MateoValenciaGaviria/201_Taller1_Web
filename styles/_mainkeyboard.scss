@@ -35,4 +35,25 @@
         text-align: center;
         pointer-events: none;
     }
+
+    @media (max-width: $breakpoint-sm){
+
+        &__text{
+            display: flex;
+            color: white;
+            position: absolute;
+            top: 80px;
+        }
+
+        &__color{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            background-image: url("../images/colors.gif");
+            border-radius: 0;
+            left: 10%;
+            top: 50%;
+        }
+        
+    }
 }
